@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-primary: #183C6F;
+  --color-brand-secondary: #1D3062;
+  --color-brand-accent: #D32727;
+  
+  --color-brand-bg: #FFFFFF;
+  --color-brand-bg-gray: #F8FAFC;
+  --color-brand-bg-section: #F8FAFC;
+  
+  --color-brand-text-primary: #0F172A;
+  --color-brand-text-secondary: #475569;
+  --color-brand-text-tertiary: #64748B;
+  --color-brand-border: rgba(15, 23, 42, 0.06);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-bg-gray);
+    color: var(--color-brand-text-primary);
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Beautiful dynamic cubic bezier transition curves */
+.transition-luxury {
+  transition: all 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Apple Liquid Frosted Glass Overlay */
+.glass-premium {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.glass-premium-border {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+/* Apple-style featherlight elegant shadow */
+.shadow-luxury {
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+}
+
+.shadow-luxury-hover {
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.03);
+}
+
+.shadow-header {
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+}
+
+/* Precise image load and smooth hover scale zoom */
+.image-transition {
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar in modern Apple style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.08);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.18);
+}
+
+/* Precise Apple typography spacing & line-height setups */
+p {
+  line-height: 1.75;
+}
